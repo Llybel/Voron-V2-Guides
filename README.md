@@ -3,6 +3,7 @@
 
 This is a github version of my guides. I wrote these to provide information that is either not covered, or out of date in the official manual. If you have any feedback or comments you can usually find me on the VoronDesign discord server.
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=2JCKSHQ37T86L)
 
 ---
 
