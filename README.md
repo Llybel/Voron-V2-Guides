@@ -10,7 +10,49 @@ This is a github version of my guides. I wrote these to provide information that
 
 
 
-[TOC]
+ [Llybel’s V2.4 Recommended BoM Changes](#llybel’s-v2-4-recommended-bom-changes)
+-  [Necessary changes from BoM](#necessary-changes-from-bom)
+-  [Strongly recommended changes](#strongly-recommended-changes)
+-  [Popular changes or additions](#popular-changes-or-additions)
+-  [Recommended Spares](#recommended-spares)
+-  [Recommended Tools](#recommended-tools)
+-  [Changes involved with Octopus / Spider boards](#changes-involved-with-octopus-spider-boards)
+-  [My recommended Mods](#my-recommended-mods)
+- -  [Exceptions to the stock first rule](#exceptions-to-the-stock-first-rule)
+- - [Build stock first](#build-stock-first)
+
+<br><br>
+
+[Llybel’s v2.4 Sourcing Notes](#llybel’s-v2-4-sourcing-notes)
+- [Filament and Printer Parts](#filament-and-printer-parts)
+- [Fasteners](#fasteners)
+- [Motion](#motion)
+- [Electronics](#electronics)
+- [Controller](#controller)
+- [Frame](#frame)
+- [Misc](#misc)
+- [Cables](#cables)
+- [Buildplate](#buildplate)
+
+<br><br>
+
+[Llybel’s v2.4 Pre Build guide (WIP)](#llybel’s-v2-4-pre-build-guide-wip)
+- [Read the Manual and Doc site](#read-the-manual-and-doc-site)
+- [Cleaning rails](#cleaning-rails)
+- [Apply Bed Heater and magnet](#apply-bed-heater-and-magnet)
+- [Test Probe](#test-probe)
+- [Double check you have ordered everything](#double-check-you-have-ordered-everything)
+- [Wash your PEI plate](#wash-your-pei-plate)
+- [Make sure you have spares](#make-sure-you-have-spares)
+- [Join the VD discord and join your local channel](#join-the-vd-discord-and-join-your-local-channel)
+- [Check Tools](#check-tools)
+- [Practice Crimping](#practice-crimp)
+- [Set up your raspberry Pi](#set-up-your-raspberry-pi)
+- [Read up on klipper - look at printer.cfg’s](#read-up-on-klipper-look-at-printer-cfg’s)
+- [Prepare your work space](#prepare-your-work-space)
+- [Watch youtube guides](#watch-youtube-guides)
+- [Find / Read documentation on your MCU board](#find-read-documentation-on-your-mcu-board)
+- [If you are getting a kit - make sure you know what it comes with / any changes from stock](#if-you-are-getting-a-kit-make-sure-you-know-what-it-comes-with-any-changes-from-stock)
 
 
 
@@ -149,18 +191,18 @@ Note that this is not intended as a replacement for the sourcing guide or to be 
 * **ABS, ABS+ or ASA only for parts inside the chamber** - PETG and PLA will melt, Nylon and carbon fiber blends have been known to crack and Aluminium is too heavy and inflexible.
 * **PLA, PETG or anything else can be used for parts outside the chamber**
 * **Local channels are a great place to ask for brand recommendations.**
-* **Don’t buy printed parts from EBAY or Aliexpress - ** If the PiF queue is too long, people sell sets in the #flea_market channel and you can usually find people happy to print in the local channels. Ebay and Aliexpress have been known to send parts that are printed in low quality filaments.
+* **Don’t buy printed parts from EBAY or Aliexpress -** If the PiF queue is too long, people sell sets in the #flea_market channel and you can usually find people happy to print in the local channels. Ebay and Aliexpress have been known to send parts that are printed in low quality filaments.
 
 <h2 id="fasteners">Fasteners</h2>
 
 
 
 
-* **Misumi extrusion don’t like aliexpress post insert t-slot nuts - ** They can be pre-inserted but will need to be sanded slightly to be rotated in. LDO frames seem to only have problems with the occasional nut. Some people have had luck with POLISI3D nuts (amazon) with Misumi frames.
-* **Black fasteners can rust - ** This is usually only an issue in places with high humidity.
+* **Misumi extrusion don’t like aliexpress post insert t-slot nuts -** They can be pre-inserted but will need to be sanded slightly to be rotated in. LDO frames seem to only have problems with the occasional nut. Some people have had luck with POLISI3D nuts (amazon) with Misumi frames.
+* **Black fasteners can rust -** This is usually only an issue in places with high humidity.
 * **Knurled Nuts are used as spacers** - Hence why they are m4, so the m3 bolts can pass through to the m3 t nut.
-* **Buy Spares ** - And buy extra M3x16 spares. The amount listed on the BOM might still be a little low
-* **Fastener kits can make things easier BUT MAKE SURE THEY HAVE SPARES - ** It is worth finding a local supplier as well
+* **Buy Spares** - And buy extra M3x16 spares. The amount listed on the BOM might still be a little low
+* **Fastener kits can make things easier BUT MAKE SURE THEY HAVE SPARES -** It is worth finding a local supplier as well
 
 <h2 id="motion">Motion</h2>
 
@@ -169,52 +211,52 @@ Note that this is not intended as a replacement for the sourcing guide or to be 
 
 * **Get POWGE or GATES belts, pulleys and idlers** - There have been a couple people lately with unbranded belts that have snapped. Bad quality belts, pulleys and idlers can directly result in worse prints with vertical visual artifacts.
 * **CNA, RobotDigg and LDO all make decent rails**
-* **Motion kits are a good way to simplify ordering - ** Buy from POWGE (aliexpress) or one of the vendors from the VD discord to ensure you get good quality though.
+* **Motion kits are a good way to simplify ordering -** Buy from POWGE (aliexpress) or one of the vendors from the VD discord to ensure you get good quality though.
 
 <h2 id="electronics">Electronics</h2>
 
 
 
 
-* **Buy microswitches and anything that touches mains from a supplier you trust - ** Cheap chinese mains components can cause fires, and cheap microswitches can cause inconsistent homing.
+* **Buy microswitches and anything that touches mains from a supplier you trust -** Cheap chinese mains components can cause fires, and cheap microswitches can cause inconsistent homing.
 * **Most of the Omron D2F switches are a good choice** - However the D2f-01L is not recommended as they will wear out faster.
 * **Go with PL-08N2 probe if planning to upgrade to klicky later**
 * **B stock Omron work just as well as A stock**
-* **SSR is the component most likely to cause a fire - ** Please buy quality (like Omron for a reputable source)
-* **Combined inlet / switch is no longer supported - ** People have had issues with cheap ones from china shorting.
-* **There are a number of different switches / inlets that will fit - ** If the ones recommended in the guide are out of stock, note the dimensions. Digikey and Mouser will allow you to use those to filter for others that will work.
-* **Most inlets do not come with fuses - ** make sure to order some at the same time. The non-medical filtered inlets are just as good as the medical ones when it comes to a printer.
-* **Bat85 diode is not needed with the spider - ** The Octopus technically doesn’t need on either but due to issues with the optocoupler I recommend still buying one so you can use an endstop port instead.
+* **SSR is the component most likely to cause a fire -** Please buy quality (like Omron for a reputable source)
+* **Combined inlet / switch is no longer supported -** People have had issues with cheap ones from china shorting.
+* **There are a number of different switches / inlets that will fit -** If the ones recommended in the guide are out of stock, note the dimensions. Digikey and Mouser will allow you to use those to filter for others that will work.
+* **Most inlets do not come with fuses -** make sure to order some at the same time. The non-medical filtered inlets are just as good as the medical ones when it comes to a printer.
+* **Bat85 diode is not needed with the spider -** The Octopus technically doesn’t need on either but due to issues with the optocoupler I recommend still buying one so you can use an endstop port instead.
 * **Sunon and Delta make better fans than the GDSTIME ones** - Sunon Maglev don’t always like PWM though so I recommend against using them for the part cooling blower
-* **Don’t use Noctuas fans inside the chamber - ** They don’t have enough static pressure. They are fine for the skirt fans though.
-* **Get a 5015 blower for when you upgrade to the AB-BN mod for part cooling - ** They are often easier to source than 4020s as well
-* **Phaetus and Triangle labs Dragon hotends are equally as good - ** The only difference is the shape of the heater block.
-* **The Standard Dragon is enough for most people ** - and is slightly easier to calibrate as well.
+* **Don’t use Noctuas fans inside the chamber -** They don’t have enough static pressure. They are fine for the skirt fans though.
+* **Get a 5015 blower for when you upgrade to the AB-BN mod for part cooling -** They are often easier to source than 4020s as well
+* **Phaetus and Triangle labs Dragon hotends are equally as good -** The only difference is the shape of the heater block.
+* **The Standard Dragon is enough for most people** - and is slightly easier to calibrate as well.
 
 <h2 id="controller">Controller</h2>
 
 
 
 
-* **Raspberry Pi 3 are more than good enough ** - Klipper does not need a lot of ram either.
+* **Raspberry Pi 3 are more than good enough** - Klipper does not need a lot of ram either.
 
 <h2 id="frame">Frame</h2>
 
 
 
 
-* **LDO frames are just as good as Misumi ** - and easier to source.
+* **LDO frames are just as good as Misumi** - and easier to source.
 
 <h2 id="misc">Misc</h2>
 
 
 
 
-* **Make sure you get a bowden tube with ID 3mm - ** 2mm internal diameter will have too much friction for the reverse bowden.This friction can cause extrusion issues
-* **You will also need a small piece of ID 1.9mm - ** or 2mm or 1.75mm, this is to go between the clockwork and the hotend. Widing the top end can make it easier to insert filament
-* **Foam tape for panels can be brought in hardware stores - ** It is sold to seal gaps around windows and doors.
-* **You can cannibalise a BMG extruder for parts **
-* **EP 1 or 2 grease is best for the rails - ** any thick (NLGI 1 or 2) lithium grease with no solid particles (e.g. graphite) will work.
+* **Make sure you get a bowden tube with ID 3mm -** 2mm internal diameter will have too much friction for the reverse bowden.This friction can cause extrusion issues
+* **You will also need a small piece of ID 1.9mm -** or 2mm or 1.75mm, this is to go between the clockwork and the hotend. Widing the top end can make it easier to insert filament
+* **Foam tape for panels can be brought in hardware stores -** It is sold to seal gaps around windows and doors.
+* **You can cannibalise a BMG extruder for parts**
+* **EP 1 or 2 grease is best for the rails -** any thick (NLGI 1 or 2) lithium grease with no solid particles (e.g. graphite) will work.
 * **Clean your linear rails before greasing and installing them** - Rails come in machine oil and can have metal particles in the carriages from the machining process. Pour some IPA into the carriage, move the carriage around, wipe the rail down with paper towels and repeat 3-4 times.
 
 <h2 id="cables">Cables</h2>
@@ -232,7 +274,7 @@ Note that this is not intended as a replacement for the sourcing guide or to be 
 
 
 * **Avoid Aliexpress -** You won’t save much but will have a 50% chance of getting something almost unusable.
-* **Lecktor, Fermio Labs, West3D and Mandela Rosework all sell great beds - ** The bed is the one thing, more than any other that you do not want to take a risk on
+* **Lecktor, Fermio Labs, West3D and Mandela Rosework all sell great beds -** The bed is the one thing, more than any other that you do not want to take a risk on
 * **Energetic (aliexpress, powder coated), Mueller (EU) and KB3D make good PEI flex plates**
 
 
@@ -309,7 +351,7 @@ I learnt a huge amount by just hanging out in the Voron discord whilst waiting f
 
 Again, should be obvious - make sure you have a good crimper for jst and microfit. 
 
-<h2>Practice Crimping </h2>
+<h2 id="practice-crimp">Practice Crimping </h2>
 
 
 This is especially important if you are not using a premade harness. Bad crimps are the number one cause of hardware issues in the VD discord. If you don’t know how to crimp there are lot of guides on the internet  / youtube
