@@ -219,7 +219,7 @@ Note that this is not intended as a replacement for the sourcing guide or to be 
 
 
 
-* **Buy microswitches and anything that touches mains from a supplier you trust -** Cheap chinese mains components can cause fires, and cheap microswitches can cause inconsistent homing.
+* **Buy microswitches and anything that touches mains from a supplier you trust (digikey)-** Cheap chinese mains components can cause fires, and cheap microswitches can cause inconsistent homing.
 * **Most of the Omron D2F switches are a good choice** - However the D2f-01L is not recommended as they will wear out faster.
 * **Go with PL-08N2 probe if planning to upgrade to klicky later**
 * **B stock Omron work just as well as A stock**
